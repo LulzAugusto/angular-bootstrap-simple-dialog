@@ -19,13 +19,16 @@
         /**
          * Shows up a Bootstrap modal
          * @param  Object options Configuration object for the modal. It has the following properties
-         *                     title - string - modal title
-         *                     message - string - modal message
-         *                     confirmButton - string - confirmation button text
-         *                     cancelButton - string - cancel button text
-         *                     showCancel - boolean - flag that determines if the cancel button will appear
-         *                     confirm - function() - callback to be executed on confirm
-         *                     cancel - function() - callback to be executed on cancel
+         *                            title - string - modal title
+         *                            message - string - modal message
+         *                            confirmButton - string - confirmation button text
+         *                            cancelButton - string - cancel button text
+         *                            showCancel - boolean - flag that determines if the cancel button will appear
+         *                            confirm - function() - callback to be executed on confirm
+         *                            cancel - function() - callback to be executed on cancel
+         *                        It also accepts the following ui-bootstrap options:
+         *                            backdrop
+         *                            size
          */
         function show(options) {
             var modal = $modal.open({
