@@ -2,5 +2,5 @@
     'use strict';
 
     angular
-        .module('lz.simple-dialog', []);
+        .module('lz.simple-dialog', ['lz.simple-dialog.tpls']);
 })();
