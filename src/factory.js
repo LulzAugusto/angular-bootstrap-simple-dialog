@@ -14,9 +14,8 @@
         };
         return service;
 
-        ////////////////
-
         /**
+         * TODO: A decent docs
          * Shows up a Bootstrap modal
          * @param  Object options Configuration object for the modal. It has the following properties
          *                            title - string - modal title
