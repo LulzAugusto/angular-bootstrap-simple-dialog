@@ -3,7 +3,7 @@
 
     angular
         .module('lz.simple-dialog')
-        .factory(SimpleDialog);
+        .factory('SimpleDialog', SimpleDialog);
 
     SimpleDialog.$inject = ['$modal'];
 
@@ -31,6 +31,7 @@
          */
         function show(options) {
             var modal = $modal.open({
+                templateUrl: 'template.html',
                 controller: 'SimpleDialogController',
                 controllerAs: 'dialog',
                 backdrop: options.backdrop || true,
