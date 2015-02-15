@@ -3,7 +3,7 @@
 
     angular
         .module('lz.simple-dialog')
-        .controller(SimpleDialogController);
+        .controller('SimpleDialogController', SimpleDialogController);
 
     SimpleDialogController.$inject = ['$modalInstance', 'options'];
 
