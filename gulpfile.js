@@ -27,6 +27,11 @@ gulp.task('template', function() {
         .pipe(gulp.dest('.tmp'));
 });
 
+gulp.task('clean', function() {
+    return gulp.src(['dist', '.tmp'], {read: false})
+        .pipe($.clean());
+});
+
 gulp.task('build', function() {
-    runSequence('template', 'js');
+    runSequence('clean', 'template', 'js');
 });

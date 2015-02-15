@@ -15,8 +15,8 @@
         vm.cancel = cancel;
         vm.message = data.message;
         vm.title = data.title;
-        vm.confirmButton = data.confirmButton || 'Ok';
-        vm.cancelButton = data.cancelButton || 'Cancel';
+        vm.primaryButton = data.primaryButton || 'Ok';
+        vm.secondaryButton = data.secondaryButton || 'Cancel';
         vm.showCancel = data.showCancel || false;
 
         function confirm() {
