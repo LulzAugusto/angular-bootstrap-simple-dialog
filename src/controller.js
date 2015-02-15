@@ -5,10 +5,10 @@
         .module('lz.simple-dialog')
         .controller('SimpleDialogController', SimpleDialogController);
 
-    SimpleDialogController.$inject = ['$modalInstance', 'options'];
+    SimpleDialogController.$inject = ['$modalInstance', 'data'];
 
     /* @ngInject */
-    function SimpleDialogController($modalInstance, options) {
+    function SimpleDialogController($modalInstance, data) {
         var vm = this;
 
         vm.confirm = confirm;
