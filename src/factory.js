@@ -39,19 +39,19 @@
                 resolve: {
                     data: function() {
                         return {
-                            title: data.title,
-                            message: data.message,
-                            primaryButton: data.primaryButton,
-                            secondaryButton: data.secondaryButton,
-                            showCancel: data.showCancel
+                            title: options.title,
+                            message: options.message,
+                            primaryButton: options.primaryButton,
+                            secondaryButton: options.secondaryButton,
+                            showCancel: options.showCancel
                         };
                     }
                 }
             });
 
             modal.result
-                .then(data.confirm)
-                .catch(data.cancel);
+                .then(options.confirm)
+                .catch(options.cancel);
         }
     }
 })();
