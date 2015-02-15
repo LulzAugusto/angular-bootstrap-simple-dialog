@@ -1,0 +1,32 @@
+{
+  "name": "angular-bootstrap-simple-dialog",
+  "version": "0.0.1",
+  "homepage": "https://github.com/LulzAugusto/angular-bootstrap-simple-dialog",
+  "authors": [
+    "Luiz Augusto <luiz66@gmail.com>"
+  ],
+  "description": "An easy-to-use service for opening modals with AngularJS, Twitter Bootstrap and UI-Bootstrap.",
+  "main": "main.js",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "angular",
+    "modal",
+    "dialog",
+    "bootstrap"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.2",
+    "angular": "~1.2.28",
+    "angular-bootstrap": "~0.12.0"
+  }
+}

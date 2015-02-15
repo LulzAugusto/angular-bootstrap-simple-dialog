@@ -1,0 +1,11 @@
+<header class="modal-header">
+    <button class="close" type="button" ng-click="dialog.cancel()"><span class="glyphicon glyphicon-remove" ></span></button>
+    <h3 class="modal-title">{{dialog.title}}</h3>
+</header>
+<main class="modal-body">
+    <p>{{dialog.message}}</p>
+</main>
+<footer class="modal-footer">
+    <button ng-if="dialog.showCancel" class="btn btn-default" ng-click="dialog.cancel()">{{dialog.secondaryButton}}</button>
+    <button class="btn btn-primary" ng-click="dialog.confirm()">{{dialog.primaryButton}}</button>
+</footer>
